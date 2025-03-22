@@ -41,28 +41,26 @@ handler.command = /^(menu|comandi)$/i;
 export default handler;
 
 function generateMenuText(prefix, botName, userCount) {
-    return `╔ ✦ ✧ ✦ ════════╗  
-『💬』 𝐔𝐬𝐚 𝐂𝐡𝐚𝐭𝐔𝐧𝐢𝐭𝐲-𝐁𝐨𝐭 『💬』  
-╚═══════ ✦ ✧ ✦ ═╝
-        
-⚙  ${prefix}𝐅𝐮𝐧𝐳𝐢𝐨𝐧𝐢
-📥 ${prefix}𝐈𝐧𝐬𝐭𝐚𝐥𝐥𝐚
-👑 ${prefix}𝐩𝐫𝐨𝐩𝐫𝐢𝐞𝐭𝐚𝐫𝐢𝐨
-🛡  ${prefix}𝐀𝐝𝐦𝐢𝐧
-👥 ${prefix}𝐆𝐫𝐮𝐩𝐩𝐨
-📜 ${prefix}𝐒𝐜𝐫𝐢𝐩𝐭
-🤖 ${prefix}𝐢𝐚
-⚡ ${prefix}𝐒𝐭𝐚𝐭𝐨
-🚀 ${prefix}𝐏𝐢𝐧𝐠/𝐒𝐩𝐞𝐞𝐝𝐭𝐞𝐬𝐭
-
-    『💬』 ══ •⊰✰⊱• ══ 『💬』
-
-𝐔𝐭𝐞𝐧𝐭𝐢: ${userCount}
-𝐀𝐮𝐭𝐨𝐫𝐞: 𝐂𝐡𝐚𝐭𝐔𝐧𝐢𝐭𝐲
-𝐕𝐞𝐫𝐬𝐢𝐨𝐧𝐞: 3.0
-
-╔ ✦ ✧ ✦ ════════╗  
-       © 2024 ChatUnity  
-╚════════ ✦ ✧ ✦ ╝
+    return `const commandList = `
+╭━━〔 *⚡ 𝑴𝑬𝑵𝑼 𝑫𝑬𝑳 𝑩𝑶𝑻 ⚡* 〕━━┈⊷
+┃◈╭─────────────·๏
+┃◈┃• *𝑪𝑶𝑴𝑨𝑵𝑫𝑰 𝑮𝑬𝑵𝑬𝑹𝑨𝑳𝑰*
+┃◈┃• 
+┃◈┃• ⚙️ ${usedPrefix}𝐅𝐮𝐧𝐳𝐢𝐨𝐧𝐢
+┃◈┃• 📥 ${usedPrefix}𝐈𝐧𝐬𝐭𝐚𝐥𝐥𝐚
+┃◈┃• 👑 ${usedPrefix}𝐩𝐫𝐨𝐩𝐫𝐢𝐞𝐭𝐚𝐫𝐢𝐨
+┃◈┃• 🛡️ ${usedPrefix}𝐀𝐝𝐦𝐢𝐧
+┃◈┃• 👥 ${usedPrefix}𝐆𝐫𝐮𝐩𝐩𝐨
+┃◈┃• 📜 ${usedPrefix}𝐒𝐜𝐫𝐢𝐩𝐭
+┃◈┃• 🤖 ${usedPrefix}𝐢𝐚
+┃◈┃• ⚡ ${usedPrefix}𝐒𝐭𝐚𝐭𝐨
+┃◈┃• 🚀 ${usedPrefix}𝐏𝐢𝐧𝐠/𝐒𝐩𝐞𝐞𝐝𝐭𝐞𝐬𝐭
+┃◈┃• 
+┃◈└───────────┈⊷
+╰━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┈⊷
+*•────────────•⟢*
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ${botName}
+*•────────────•⟢*
+`.trim();
     `;
 }
