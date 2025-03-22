@@ -19,7 +19,7 @@ const handler = async (message, { conn, usedPrefix }) => {
             },
             externalAdReply: {
                 title: 'Menu Principale',
-                body: 'Versione: 2.0',
+                body: 'Versione: 3.0',
                 mediaType: 1,
                 renderLargerThumbnail: false,
                 previewType: 'thumbnail',
@@ -52,92 +52,65 @@ async function fetchThumbnail(url) {
 
 handler.help = ['menu'];
 handler.tags = ['menu'];
-handler.command = /^(gruppo|comandigruppo)$/i;
+handler.command = /^(gruppo|menugruppo)$/i;
 
 export default handler;
 
 function generateMenuText(prefix, botName, userCount) {
     return `
-*╔═✦ 🎵 MUSICA & AUDIO ✦═╗*  
-➤ *.play* (canzone + artista) → Riproduce una canzone.  
-➤ *.video* (canzone + artista) → Trova il video di una canzone.  
-➤ *.shazam* (audio) → Riconosce la canzone dall’audio.  
-➤ *.tomp3* (video) → Converte un video in MP3.  
+╭━〔 *⚡𝑴𝑬𝑵𝑼 𝐆𝐑𝐔𝐏𝐏𝐎⚡* ━┈⊷
+┃◈╭━━━━━━━━━━━━━·๏
+┃◈┃• *𝑪𝑶𝑴𝑨𝑵𝑫𝑰 𝐏𝐄𝐑 𝐈 𝐌𝐄𝐌𝐁𝐑𝐈*
+┃◈╰━━━━━━━━━━━━┈⊷
+┃◈╭─✦ MUSICA & AUDIO ✦═╗
+┃◈┃• 🎵 *${prefix}play* (canzone + artista)
+┃◈┃• 🎥 *${prefix}video* (canzone + artista) 
+┃◈┃• 🎶 *${prefix}shazam* (audio) 
+┃◈┃• 🔊 *${prefix}tomp3* (video) 
+┃◈╰━━━━━━━━━━━━┈⊷
+┃◈╭✦INFORMAZIONI/UTILITÀ✦╗
+┃◈┃• 🌍 *${prefix}meteo* (città) 
+┃◈┃• 🕒 *${prefix}orario* (città) 
+┃◈┃• 🌐 *${prefix}traduci* (testo) 
+┃◈┃• 📊 *${prefix}contaparole* (testo) 
+┃◈┃• 🆔 *${prefix}id* (gruppo) 
+┃◈╰━━━━━━━━━━━━┈⊷
+┃◈╭✦IMMAGINI/MODIFICA✦╗
+┃◈┃• 📷 *${prefix}hd* (foto) .
+┃◈┃• 🖼️ *${prefix}rimuovisfondo* (foto) 
+┃◈┃• 🔍 *${prefix}rivela* (foto) 
+┃◈┃• 🖼️ *${prefix}toimg* (sticker) 
+┃◈╰━━━━━━━━━━━━┈⊷
+┃◈╭──✦ TESTO & STILI ✦═╗
+┃◈┃• ✨ *${prefix}styletext* (testo) 
+┃◈┃• 🖼️ *${prefix}ttp* (testo) 
+┃◈╰━━━━━━━━━━━━┈⊷
+┃◈╭✦GIOCHI/DIVERTIMENTO✦╗
+┃◈┃• 🎮 *${prefix}tris* → Gioca a Tris.
+┃◈┃• 🎲 *${prefix}dado* → Lancia un dado.
+┃◈┃• 🎰 *${prefix}slot* → Gioca alle slot.
+┃◈╰━━━━━━━━━━━━┈⊷
+┃◈╭✦INTERAZIONI SOCIALI✦╗
+┃◈┃• 🤗 *${prefix}abbraccia* @ 
+┃◈┃• 😡 *${prefix}odio* @ 
+┃◈┃• 💌 *${prefix}amore* @ 
+┃◈╰━━━━━━━━━━━━┈⊷
+┃◈╭─✦ VIDEO/ANIMAZIONI ✦╗
+┃◈┃• 🎥 *${prefix}tovideo* (gif/sticker) 
+┃◈┃• 🎞️ *${prefix}togif* (video) 
+┃◈┃• 🎨 *${prefix}toanime* (foto) 
+┃◈╰━━━━━━━━━━━━┈⊷
+┃◈╭──✦ STICKERS & MEDIA ✦╗
+┃◈┃• 🛠️ *${prefix}sticker* (foto) 
+┃◈┃• 🖼️ *${prefix}png* (sticker) 
+┃◈┃
+┃◈┃• *𝑽𝑬𝑹𝑺𝑰𝑶𝑵𝑬:* ${vs}
+┃◈┃• *𝑫𝑬𝑽𝑬𝑳𝑶𝑷𝑬𝑹:* ChatUnity
+┃◈└──────────┈⊷
+╰━━━━━━━━━━━━━┈⊷
+*•────────────•⟢*
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ${botName}
+*•────────────•⟢*
 
-*╚══════════════╝*  
-
-*╔✦ 🌍 INFORMAZIONI & UTILITÀ ✦╗*  
-➤ *.meteo* (città) → Mostra il meteo di una città.  
-➤ *.orario* (città) → Mostra l’ora attuale di una città.  
-➤ *.traduci* (testo) → Traduce il testo in un’altra lingua.   
-➤ *.msg/attività* @ → Mostra l’attività di un utente.  
-➤ *.contaparole* (testo) → Conta le parole di un testo.  
-➤ *.id* (gruppo) → Mostra l’ID del gruppo.  
-➤ *.gitclone* → Clona un repository Git.  
-➤ *.Info* → Ottieni info su di te o altre persone.
-➤ *.setig* → Imposta il tuo ig.
-➤ *.traduci* → Traduci in italiano.
-
-*╚══════════════╝*  
-
-*╔✦ 📷 IMMAGINI & MODIFICA FOTO ✦╗*  
-➤ *.hd* (foto) → Migliora la qualità di una foto.  
-➤ *.rimuovisfondo* (foto) → Rimuove lo sfondo da un’immagine.   
-➤ *.rivela* (foto) → Analizza e rivela informazioni da una foto.  
-➤ *.toimg* (sticker) → Converte uno sticker in immagine.  
-
-*╚══════════════╝*  
-
-*╔═✦ 🎭 TESTO & STILI ✦═╗*  
-➤ *.leggi* (foto) → Legge il testo in un’immagine.  
-➤ *.styletext* (testo) → Cambia lo stile del testo.  
-➤ *.ttp* (testo) → Genera un’immagine con testo.  
-
-*╚══════════════╝*  
-
-*╔✦ 🎮 GIOCHI & DIVERTIMENTO ✦╗*  
-➤ *.tris* → Gioca a Tris.  
-➤ *.dado* → Lancia un dad0.  
-➤ *.slot* → Gioca alle slot machine.
-➤ *.Zizzania* @ → Scopri i segreti sessuali. 
-➤ *.sposami* @ → Proponi un matrimonio virtuale.  
-➤ *.crush* → Scopri chi è la tua cotta.  
-➤ *.topgays* → Classifica dei più gay.  
-➤ *.topnazi* → Classifica dei più nazi. 
-➤ *.dox* → Doxxa qualcuno.
-➤ *.down* → Quanto è?.  
-➤ *.disabile* → Quanto è?.  
-➤ *.ritardato/a* → Quanto è?.
-➤ *.bello/a* → Quanto è?
-
-*╚══════════════╝*  
-
-*╔✦ 🎭 INTERAZIONI SOCIALI ✦╗*  
-➤ *.abbraccia* @ → Dai un abbraccio.  
-➤ *.odio* @ → Esprimi odio per qualcuno.  
-➤ *.amore* @ → Dichiarazione d’amore.  
-➤ *.insulta* (nome/@) → Insulta qualcuno.  
-➤ *.scopa* @ → Fai una battuta su un’azione.  
-
-*╚══════════════╝*  
-
-*╔✦ 🎥 VIDEO & ANIMAZIONI ✦╗*  
-➤ *.tovideo* (gif/sticker) → Converte una GIF o sticker in video.  
-➤ *.togif* (video) → Converte un video in GIF.  
-➤ *.toanime* (foto) → Trasforma un’immagine in stile anime.  
-
-*╚══════════════╝*  
-
-*╔✦ 🛠 STICKERS & MEDIA ✦╗*  
-➤ *.sticker / s* (foto) → Crea uno sticker da un’immagine.  
-➤ *.png* (sticker) → Converte uno sticker in PNG.  
-➤ *.bonk* → Meme del bonk.  
-➤ *.autoadmin* → Imposta amministrazione automatica.  
-
-*╚══════════════╝*  
-
-╔ ✦ ✧ ✦ ════════╗  
-       © 2024 ChatUnity  
-╚════════ ✦ ✧ ✦ ╝
   `;
 }

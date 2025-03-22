@@ -11,7 +11,7 @@ let format = sizeFormatter({
 
 let handler = async (m, { conn, usedPrefix, command }) => {
   let nomeDelBot = global.db.data.nomedelbot || `𝐂𝐡𝐚𝐭𝐔𝐧𝐢𝐭𝐲`
-  let versioneBot = '2.0' // Specifica la versione del bot
+  let versioneBot = '3.0' // Specifica la versione del bot
   let old = performance.now()
   let neww = performance.now()
   let speed = (neww - old).toFixed(2) // Limita la velocità a 2 decimali

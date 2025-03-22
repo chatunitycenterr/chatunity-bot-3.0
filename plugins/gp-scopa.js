@@ -7,7 +7,7 @@ let handler = async (m, { conn, command, text }) => {
     conn.sendMessage(m.chat, { react: { text: '💦', key: m.key } });
 }
 
-handler.customPrefix = /scopa/i;
+handler.customPrefix = /^\.scopa$/i
 handler.admin = true;
 handler.command = new RegExp;
 export default handler;
