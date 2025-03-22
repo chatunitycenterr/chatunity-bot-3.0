@@ -9,7 +9,7 @@ let handler = async (m, { conn, command, text }) => {
     conn.sendMessage(m.chat, { react: { text: '🫂', key: m.key } });
 }
 
-handler.customPrefix = /abbraccia/i;
+handler.customPrefix = /^(abbraccia)$/i
 handler.admin = true;
 handler.command = new RegExp;
 export default handler;

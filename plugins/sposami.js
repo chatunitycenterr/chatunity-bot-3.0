@@ -10,6 +10,23 @@ mentions: [a, b]
 })}
 handler.help = ['formarpareja']
 handler.tags = ['main', 'fun']
-handler.command = ['sposami','formarparejas']
+handler.command = ['sposami','sposa']
 handler.group = true
+
+const inoltra = (who, nomeDelBot) => {
+  const messageOptions = {
+    contextInfo: {
+      mentionedJid: [who],
+      forwardingScore: 999,
+      isForwarded: true,
+      forwardedNewsletterMessageInfo: {
+        newsletterJid: '120363259442839354@newsletter',
+        serverMessageId: '',
+        newsletterName: `${nomeDelBot}`
+      }
+    }
+  }
+  return messageOptions;
+}
+
 export default handler
