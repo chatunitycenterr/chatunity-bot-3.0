@@ -1,62 +1,55 @@
-import { performance } from 'perf_hooks'
+import { performance } from "perf_hooks";
 
-let handler = async (m, { conn, text }) => {
-  // Get bot name from database or use default
-  let nomeDelBot = global.db.data.nomedelbot || `𝐂𝐡𝐚𝐭𝐔𝐧𝐢𝐭𝐲`
-
-  // Animation messages
-  let messages = [
-    `Ora faccio un ditalino a ${text}`,
-    `ㅤ\n✌🏻`,
-    `👆🏻\nㅤ`,
-    `☝🏻\nㅤ`,
-    `ㅤ\n🤟🏻`,
-    `👋🏻\nㅤ`,
-    `ㅤ\n✌🏻`,
-    `🤟🏻\nㅤ`,
-    `☝🏻\nㅤ`, 
-    `ㅤ\n☝🏻`,
-    `ㅤ\n👆🏻`,
-    `ㅤ\n👋🏻`
-  ]
-
-  // Send animation messages
-  for (let msg of messages) {
-    await conn.sendMessage(m.chat, {
-      text: msg,
-      contextInfo: {
-        forwardingScore: 99,
-        isForwarded: true,
-        forwardedNewsletterMessageInfo: {
-          newsletterJid: '120363259442839354@newsletter',
-          serverMessageId: '',
-          newsletterName: `${nomeDelBot}`
-        }
-      }
-    }, { quoted: m })
-  }
-
-  // Final message
-  let start = performance.now()
-  let end = performance.now()
-  let time = `${end - start}`
-  let final = `Oh ${text} è venuta!🥵`
-
-  await conn.sendMessage(m.chat, {
-    text: final,
-    contextInfo: {
-      forwardingScore: 99,
-      isForwarded: true,
-      forwardedNewsletterMessageInfo: {
-        newsletterJid: '120363259442839354@newsletter',
-        serverMessageId: '',
-        newsletterName: `${nomeDelBot}`
-      }
-    }
-  }, { quoted: m })
+// Funzione per selezionare un elemento casuale da un array
+function pickRandom(array) {
+    return array[Math.floor(Math.random() * array.length)];
 }
 
-handler.command = ['ditalino']
-handler.tags = ['fun']
+let handler = async (message, { conn, text }) => {
+    // Messaggi personalizzati
+    let message1 = `🤟🏻 Inizio una serie di ditalino per *${text}*...`;
+    let message2 = "👆🏻 Preparati!";
+    let message3 = "✌🏻 Si comincia...";
+    let message4 = "☝🏻 Quasi finito...";
+    let message6 = "👋🏻 Finito?";
+    let message7 = "👋🏻 Ancora un attimo...";
+    let message9 = "🤟🏻 Ci siamo quasi...";
+    let message10 = "☝🏻 Sta per schizzare!";
+    let message12 = "👋🏻 riparatevi dalla cascata!!";
 
-export default handler
+    // Opzioni per l'inoltro
+    const messageOptions = {
+        contextInfo: {
+            forwardingScore: 0,
+            isForwarded: true,
+            forwardedNewsletterMessageInfo: {
+                newsletterJid: '120363259442839354@newsletter',
+                serverMessageId: '',
+                newsletterName: `${conn.user.name}`
+            }
+        }
+    };
+
+    // Sequenza dei messaggi
+    await message.reply(message1, null, messageOptions);
+    await message.reply(message2, null, messageOptions);
+    await message.reply(message3, null, messageOptions);
+    await message.reply(message4, null, messageOptions);
+    await message.reply(message6, null, messageOptions);
+    await message.reply(message7, null, messageOptions);
+    await message.reply(message9, null, messageOptions);
+    await message.reply(message10, null, messageOptions);
+    await message.reply(message12, null, messageOptions);
+
+    // Calcolo del tempo
+    let startTime = performance.now();
+    let endTime = performance.now();
+    let elapsedTime = "" + (endTime - startTime);
+    let resultMessage = `✨ *${text}* è venuta🥵! Sta spruzzando come una cozza dopo *${elapsedTime}ms*!`;
+
+    conn.reply(message.chat, resultMessage, message, messageOptions);
+};
+
+handler.command = ["ditalino"];
+handler.tags = ["fun"];
+export default handler;

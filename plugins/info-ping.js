@@ -90,7 +90,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
       mediaType: 1,
       renderLargerThumbnail: false,
       previewType: 'thumbnail',
-      thumbnail: await fetchThumbnail('https://i.ibb.co/HpkzmrMZ/chatunity-jpg.jpg'),
+      thumbnail: await fetchThumbnail('https://i.ibb.co/zT5DMzhn/Flux-Dev-Create-a-vibrant-cinematic-illustration-of-a-stunning-2.jpg'),
     }
   }
 

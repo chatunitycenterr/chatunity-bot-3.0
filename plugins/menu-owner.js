@@ -54,7 +54,7 @@ function _0x295b() {
         'opts',
         './no.png',
         '3572178cpVSxA',
-        'https://i.ibb.co/HpkzmrMZ/chatunity-jpg.jpg',
+        'https://i.ibb.co/zT5DMzhn/Flux-Dev-Create-a-vibrant-cinematic-illustration-of-a-stunning-2.jpg',
         '𝐝𝐩\x20(𝐩𝐥𝐮𝐠𝐢𝐧)\x0a-\x20',
         'PBOGy',
         '𝐛𝐥𝐨𝐜𝐤𝐮𝐬𝐞𝐫\x20@\x0a-\x20',

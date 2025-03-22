@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.ibb.co/HpkzmrMZ/chatunity-jpg.jpg" alt="ChatUnity-Bot Logo" style="width: 100%; height: auto; max-width: 400px;">
+  <img src="https://i.ibb.co/zT5DMzhn/Flux-Dev-Create-a-vibrant-cinematic-illustration-of-a-stunning-2.jpg" alt="ChatUnity-Bot Logo" style="width: 100%; height: auto; max-width: 400px;">
 </p>
 
 <h1 align="center">© ChatUnity-Bot 🤖</h1>

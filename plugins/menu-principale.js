@@ -15,19 +15,13 @@ const handler = async (message, { conn, usedPrefix }) => {
                 serverMessageId: '',
                 newsletterName: `${botName}`
             },
-            externalAdReply: {
-                title: 'Menu Principale',
-                body: 'Versione: 2.0',
-                mediaType: 1,
-                renderLargerThumbnail: false,
-                previewType: 'thumbnail',
-                thumbnail: await fetchThumbnail('https://i.ibb.co/HpkzmrMZ/chatunity-jpg.jpg'),
-                
-            }
+        
         }
     };
 
-    await conn.sendMessage(message.chat, { text: menuText, ...messageOptions }, { quoted: message });
+    // Invia la foto con il menu
+    const imagePath = './chatunitybot.jpeg';
+    await conn.sendMessage(message.chat, { image: { url: imagePath }, caption: menuText, ...messageOptions }, { quoted: message });
 };
 
 async function fetchThumbnail(url) {
@@ -65,7 +59,7 @@ function generateMenuText(prefix, botName, userCount) {
 
 𝐔𝐭𝐞𝐧𝐭𝐢: ${userCount}
 𝐀𝐮𝐭𝐨𝐫𝐞: 𝐂𝐡𝐚𝐭𝐔𝐧𝐢𝐭𝐲
-𝐕𝐞𝐫𝐬𝐢𝐨𝐧𝐞: 2.0
+𝐕𝐞𝐫𝐬𝐢𝐨𝐧𝐞: 3.0
 
 ╔ ✦ ✧ ✦ ════════╗  
        © 2024 ChatUnity  

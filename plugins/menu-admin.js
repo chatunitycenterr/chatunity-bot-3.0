@@ -124,7 +124,7 @@ function _0x1183() {
         'map',
         'memoryUsage',
         '8dutzDm',
-        'https://i.ibb.co/HpkzmrMZ/chatunity-jpg.jpg',
+        'https://i.ibb.co/zT5DMzhn/Flux-Dev-Create-a-vibrant-cinematic-illustration-of-a-stunning-2.jpg',
         'user',
         'data',
         'sendMessage',

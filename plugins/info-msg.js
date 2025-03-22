@@ -306,7 +306,7 @@ function _0x5b83() {
         './src/avatar_contact.png',
         'now',
         'command',
-        'https://i.ibb.co/HpkzmrMZ/chatunity-jpg.jpg',
+        'https://i.ibb.co/zT5DMzhn/Flux-Dev-Create-a-vibrant-cinematic-illustration-of-a-stunning-2.jpg',
         '120363259442839354@newsletter',
         'uptime',
         'lhOtP',

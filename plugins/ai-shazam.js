@@ -21,7 +21,6 @@ function _0xf26b(_0x383267, _0x42d6db) {
         return _0x127b63;
     }, _0xf26b(_0x383267, _0x42d6db);
 }
-import { Shazam } from 'node-shazam';
 import _0x2791b7 from 'node-fetch';
 function _0x46f2() {
     const _0x2400e3 = [
@@ -95,7 +94,7 @@ function _0x46f2() {
     };
     return _0x46f2();
 }
-const shazam = new Shazam(), handler = async (_0x1a3580, {
+const handler = async (_0x1a3580, {
         command: _0x758e65,
         args: _0x2a1a2c,
         text: _0x2eca28,

@@ -1,22 +1,8 @@
 let toM = a => '@' + a.split('@')[0]
-function handler(m, { groupMetadata }) {
-let ps = groupMetadata.participants.map(v => v.id)
-let a = ps.getRandom()
-let b
-do b = ps.getRandom()
-while (b === a)
-m.reply(`*${toM(a)}, Dovresti sposarti 💍 con ${toM(b)}, formate una bella coppia 💓*`, null, {
-mentions: [a, b]
-})}
-handler.help = ['formarpareja']
-handler.tags = ['main', 'fun']
-handler.command = ['sposami','sposa']
-handler.group = true
 
-const inoltra = (who, nomeDelBot) => {
-  const messageOptions = {
+const inoltra = (nomeDelBot) => {
+  let messageOptions = {
     contextInfo: {
-      mentionedJid: [who],
       forwardingScore: 999,
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
@@ -29,4 +15,22 @@ const inoltra = (who, nomeDelBot) => {
   return messageOptions;
 }
 
+function handler(m, { groupMetadata, conn }) {
+  let ps = groupMetadata.participants.map(v => v.id)
+  let a = ps.getRandom()
+  let b
+  do b = ps.getRandom()
+  while (b === a)
+
+  const channelJid = '120363259442839354@g.us' // Sostituisci con l'ID del canale
+  const message = `*${toM(a)}, Dovresti sposarti 💍 con ${toM(b)}, formate una bella coppia 💓*`
+  const options = inoltra('NomeDelBot') // Sostituisci 'NomeDelBot' con il nome del bot
+
+  conn.sendMessage(channelJid, { text: message, ...options }) // Invia il messaggio al canale
+}
+
+handler.help = ['formarpareja']
+handler.tags = ['main', 'fun']
+handler.command = ['sposami','sposa']
+handler.group = true
 export default handler

@@ -20,7 +20,7 @@ function _0x5afc() {
         'sendMessage',
         'isChats',
         'jid',
-        'https://i.ibb.co/HpkzmrMZ/chatunity-jpg.jpg',
+        'https://i.ibb.co/zT5DMzhn/Flux-Dev-Create-a-vibrant-cinematic-illustration-of-a-stunning-2.jpg',
         'user',
         'fromMe',
         'trim',
