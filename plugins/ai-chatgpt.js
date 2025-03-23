@@ -2,7 +2,7 @@ import fetch from 'node-fetch';
 
 var handler = async (m, { text, usedPrefix, command }) => {
     if (!text) {
-        await m.reply(`Per favore, inserisci una domanda per far sì che Gemini risponda.\n\nEsempio:\n${usedPrefix + command} Raccomanda un top 10 di film d'azione\n${usedPrefix + command} Codice in JS per un gioco di carte`);
+        await m.reply(`Per favore, inserisci una domanda per far sì che l'ia ti risponda.\n\nEsempio:\n${usedPrefix + command} Raccomanda un top 10 di film d'azione\n${usedPrefix + command} Codice in JS per un gioco di carte`);
         return;
     }
 
