@@ -46,27 +46,25 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 
   let cpuModel = cpus[0]?.model || 'Unknown Model'
   let cpuSpeed = cpu.speed.toFixed(2)
+  let networkSpeed = 'N/A'
 
-  let caption = `╔ ✦ ✧ ✦ ════════╗  
-『💬』 𝙎𝙩𝙖𝙩𝙤 𝙎𝙞𝙨𝙩𝙚𝙢𝙖 『💬』  
-╚═══════ ✦ ✧ ✦ ═╝  
-
-⌛ 𝐀𝐭𝐭𝐢𝐯𝐢𝐭𝐚'':  ${clockString(uptime)}  
-🚀 𝐕𝐞𝐥𝐨𝐜𝐢𝐭𝐚':  ${speed} ms  
-
-💻 𝐈𝐧𝐟𝐨 𝐒𝐢𝐬𝐭𝐞𝐦𝐚:  
-
-🖥 𝐂𝐏𝐔: ${cpuModel}  
-🔄 𝐕𝐞𝐥𝐨𝐜𝐢𝐭𝐚': ${cpuSpeed} MHz  
-
-💾 𝐌𝐞𝐦𝐨𝐫𝐢𝐚:  
-
-🟣 𝐑𝐀𝐌 𝐔𝐬𝐚𝐭𝐚: ${format(totalmem() - freemem())} / ${format(totalmem())}  
-🔵 𝐑𝐀𝐌 𝐋𝐢𝐛𝐞𝐫𝐚: ${format(freemem())}  
-
-╔ ✦ ✧ ✦ ════════╗  
-        © 2024 ChatUnity   
-╚════════ ✦ ✧ ✦ ╝
+  let caption = `╭━〔🚀𝑺𝑻𝑨𝑻𝐎 𝑺𝑰𝑺𝑻𝑬𝑴𝑨🚀〕━┈⊷
+┃◈╭─────────────·๏
+┃◈┃• ⌛ *Uptime*: ${clockString(uptime)}
+┃◈┃• ⚡ *Ping*: ${speed} ms
+┃◈┃
+┃◈┃• 💻 *CPU*: ${cpuModel}
+┃◈┃• 🔋 *Usage*: ${cpuSpeed} MHz 
+┃◈┃
+┃◈┃• 💾 *RAM*: ${format(totalmem() - freemem())} / ${format(totalmem())}
+┃◈┃• 🟢 *Free*: ${format(freemem())}
+┃◈┃
+┃◈┃• 🌐 *Network*: ${networkSpeed}
+┃◈└───────────┈⊷
+╰━━━━━━━━━━━━━┈·๏
+*•────────────•⟢*
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ${nomeDelBot}
+*•────────────•⟢*
 `
 
   const profilePictureUrl = await fetchProfilePictureUrl(conn, m.sender)
@@ -84,26 +82,35 @@ let handler = async (m, { conn, usedPrefix, command }) => {
   }
 
   if (profilePictureUrl !== 'default-profile-picture-url') {
-    messageOptions.contextInfo.externalAdReply = {
-      title: nomeDelBot,
-      body: `Versione: ${versioneBot}`,
-      mediaType: 1,
-      renderLargerThumbnail: false,
-      previewType: 'thumbnail',
-      thumbnail: await fetchThumbnail('https://i.ibb.co/0kkQhtT/chatunityxalya.jpg'),
+    try {
+      messageOptions.contextInfo.externalAdReply = {
+        title: nomeDelBot,
+        body: `Versione: ${versioneBot}`,
+        mediaType: 1,
+        renderLargerThumbnail: false,
+        previewType: 'thumbnail',
+        thumbnail: await fetchThumbnail('https://i.ibb.co/0kkQhtT/chatunityxalya.jpg'),
+      }
+    } catch (error) {
+      console.error('Error fetching thumbnail:', error)
     }
   }
 
-  await conn.sendMessage(m.chat, {
-    text: caption,
-    ...messageOptions
-  })
+  try {
+    await conn.sendMessage(m.chat, {
+      text: caption,
+      ...messageOptions
+    })
+  } catch (error) {
+    console.error('Error sending message:', error)
+  }
 }
 
 async function fetchProfilePictureUrl(conn, sender) {
   try {
     return await conn.profilePictureUrl(sender)
   } catch (error) {
+    console.error('Error fetching profile picture URL:', error)
     return 'default-profile-picture-url' // Fallback URL in case of error
   }
 }
@@ -111,9 +118,11 @@ async function fetchProfilePictureUrl(conn, sender) {
 async function fetchThumbnail(url) {
   try {
     const response = await fetch(url)
+    if (!response.ok) throw new Error(`Failed to fetch thumbnail: ${response.statusText}`)
     const buffer = await response.buffer()
     return buffer
   } catch (error) {
+    console.error('Error fetching thumbnail:', error)
     return 'default-thumbnail' // Fallback thumbnail in case of error
   }
 }
