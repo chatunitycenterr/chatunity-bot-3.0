@@ -1,12 +1,19 @@
 import { performance } from 'perf_hooks';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+// Definizione di __dirname per i moduli ESM
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const handler = async (message, { conn, usedPrefix }) => {
     const userCount = Object.keys(global.db.data.users).length;
     const botName = global.db.data.nomedelbot || 'ChatUnity';
 
     const menuText = generateMenuText(usedPrefix, botName, userCount);
-    
-    const profilePictureUrl = await fetchProfilePictureUrl(conn, message.sender);
+
+    // Percorso dell'immagine
+    const imagePath = path.join(__dirname, '../menu.gruppo.jpeg');
 
     const messageOptions = {
         contextInfo: {
@@ -17,41 +24,27 @@ const handler = async (message, { conn, usedPrefix }) => {
                 serverMessageId: '',
                 newsletterName: `${botName}`
             },
-            externalAdReply: {
-                title: 'Menu Principale',
-                body: 'Versione: 3.0',
-                mediaType: 1,
-                renderLargerThumbnail: false,
-                previewType: 'thumbnail',
-                thumbnail: await fetchThumbnail('https://i.ibb.co/0kkQhtT/chatunityxalya.jpg'),
-                
-            }
         }
     };
 
-    await conn.sendMessage(message.chat, { text: menuText, ...messageOptions }, { quoted: message });
+    // Invia l'immagine con il menu
+    await conn.sendMessage(
+        message.chat,
+        { image: { url: imagePath }, caption: menuText, ...messageOptions },
+        { quoted: message }
+    );
 };
 
 async function fetchProfilePictureUrl(conn, sender) {
     try {
         return await conn.profilePictureUrl(sender);
     } catch (error) {
-        return 'default-profile-picture-url'; // Fallback URL in case of error
+        return 'default-profile-picture-url'; // Fallback URL in caso di errore
     }
 }
 
-async function fetchThumbnail(url) {
-    try {
-        const response = await fetch(url);
-        const arrayBuffer = await response.arrayBuffer();
-        return new Uint8Array(arrayBuffer);
-    } catch (error) {
-        return 'default-thumbnail'; // Fallback thumbnail in case of error
-    }
-}
-
-handler.help = ['menu'];
-handler.tags = ['menu'];
+handler.help = ['menugruppo'];
+handler.tags = ['menugruppo'];
 handler.command = /^(gruppo|menugruppo)$/i;
 
 export default handler;

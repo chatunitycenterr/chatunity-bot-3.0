@@ -1,1 +1,263 @@
-//const _0x194443=_0x97c7;(function(_0x59cd4a,_0x57be7e){const _0x2b7aa7=_0x97c7,_0x5563ae=_0x59cd4a();while(!![]){try{const _0x20a035=-parseInt(_0x2b7aa7(0x152))/0x1+parseInt(_0x2b7aa7(0x12b))/0x2*(parseInt(_0x2b7aa7(0x145))/0x3)+-parseInt(_0x2b7aa7(0x13e))/0x4*(-parseInt(_0x2b7aa7(0x136))/0x5)+-parseInt(_0x2b7aa7(0x137))/0x6+parseInt(_0x2b7aa7(0x146))/0x7*(parseInt(_0x2b7aa7(0x133))/0x8)+-parseInt(_0x2b7aa7(0x125))/0x9+parseInt(_0x2b7aa7(0x135))/0xa*(parseInt(_0x2b7aa7(0x13d))/0xb);if(_0x20a035===_0x57be7e)break;else _0x5563ae['push'](_0x5563ae['shift']());}catch(_0x451b0d){_0x5563ae['push'](_0x5563ae['shift']());}}}(_0x491c,0xa8777));import _0x2e6060 from'node-fetch';let handler=async(_0x223bd5,{conn:_0x21c626,usedPrefix:_0x23e251,usedPrefix:_0x26a7b5,__dirname:_0x3067b1,text:_0x199108,isPrems:_0x29c1cd})=>{const _0x48621e=_0x97c7;if(_0x23e251=='a'||_0x23e251=='A')return;try{let _0x544863=imagen4,_0x11498f=_0x48621e(0x127),_0x242bf=new Date(new Date()+0x36ee80),_0x4ab476='es',_0xb494c6=_0x242bf['toLocaleDateString'](_0x4ab476,{'weekday':'long'}),_0x57022e=_0x242bf[_0x48621e(0x142)](_0x4ab476,{'day':_0x48621e(0x132),'month':_0x48621e(0x12d),'year':'numeric'}),_0x1c3cc9=process[_0x48621e(0x131)]()*0x3e8,_0xf5160a=clockString(_0x1c3cc9),_0x5b3ee0=global['db']['data'][_0x48621e(0x13f)][_0x223bd5[_0x48621e(0x134)]],{money:_0x377ea5,joincount:_0x3ffdf3}=global['db']['data'][_0x48621e(0x13f)][_0x223bd5['sender']],{exp:_0x1d80d4,limit:_0x1bd88a,level:_0x54d242,role:_0x47d2a1}=global['db'][_0x48621e(0x139)][_0x48621e(0x13f)][_0x223bd5[_0x48621e(0x134)]],_0x416c01=Object[_0x48621e(0x154)](global['db'][_0x48621e(0x139)][_0x48621e(0x13f)])[_0x48621e(0x14a)](_0x151c75=>_0x151c75['registered']==!![])[_0x48621e(0x148)],_0x4afc9c=String[_0x48621e(0x126)](0x200e),_0x228866=_0x4afc9c[_0x48621e(0x14d)](0x352),_0x22e498='@'+_0x223bd5[_0x48621e(0x134)]['split'](_0x48621e(0x150))[0x0];var _0x448979=[_0x48621e(0x141),'zip',_0x48621e(0x140),_0x48621e(0x12f),'vnd.openxmlformats-officedocument.wordprocessingml.document'],_0x1c9def=_0x448979[Math['floor'](Math[_0x48621e(0x14c)]()*_0x448979[_0x48621e(0x148)])];let _0x247309=_0x48621e(0x129)[_0x48621e(0x13c)]();if(_0x223bd5[_0x48621e(0x151)]){let _0xa741d5={'key':{'participants':_0x48621e(0x128),'remoteJid':_0x48621e(0x144),'fromMe':![],'id':_0x48621e(0x12c)},'message':{'contactMessage':{'vcard':'BEGIN:VCARD\x0aVERSION:3.0\x0aN:Sy;Bot;;;\x0aFN:y\x0aitem1.TEL;waid='+_0x223bd5['sender'][_0x48621e(0x153)]('@')[0x0]+':'+_0x223bd5[_0x48621e(0x134)][_0x48621e(0x153)]('@')[0x0]+_0x48621e(0x14b)}},'participant':_0x48621e(0x128)};_0x21c626[_0x48621e(0x14f)](_0x223bd5[_0x48621e(0x12e)],{'image':_0x544863,'caption':_0x247309[_0x48621e(0x13c)](),'mentions':[..._0x247309[_0x48621e(0x147)](/@([0-9]{5,16}|0)/g)][_0x48621e(0x13a)](_0x320fc8=>_0x320fc8[0x1]+_0x48621e(0x150))},{'quoted':_0xa741d5});}else{let _0x3a30b7={'key':{'participants':'0@s.whatsapp.net','remoteJid':_0x48621e(0x144),'fromMe':![],'id':_0x48621e(0x12c)},'message':{'contactMessage':{'vcard':_0x48621e(0x138)+_0x223bd5[_0x48621e(0x134)][_0x48621e(0x153)]('@')[0x0]+':'+_0x223bd5[_0x48621e(0x134)][_0x48621e(0x153)]('@')[0x0]+_0x48621e(0x14b)}},'participant':_0x48621e(0x128)};_0x21c626[_0x48621e(0x14f)](_0x223bd5[_0x48621e(0x12e)],{'image':_0x544863,'caption':_0x247309[_0x48621e(0x13c)](),'mentions':[..._0x247309[_0x48621e(0x147)](/@([0-9]{5,16}|0)/g)][_0x48621e(0x13a)](_0x2e4534=>_0x2e4534[0x1]+_0x48621e(0x150))},{'quoted':_0x3a30b7});}}catch{_0x21c626[_0x48621e(0x130)](_0x223bd5[_0x48621e(0x12e)],_0x48621e(0x143),_0x223bd5);}};handler[_0x194443(0x13b)]=/^(menuloghi|loghi)$/i;function _0x491c(){const _0x3d0694=['padStart','6362ikKIhg','Halo','long','chat','vnd.openxmlformats-officedocument.spreadsheetml.sheet','reply','uptime','numeric','16ulkcHR','sender','10KcYnwt','2550185djWBnT','3369570nzoNmH','BEGIN:VCARD\x0aVERSION:3.0\x0aN:Sy;Bot;;;\x0aFN:y\x0aitem1.TEL;waid=','data','map','command','trim','7809549fRMEuR','8qqNxlX','users','vnd.openxmlformats-officedocument.presentationml.presentation','pdf','toLocaleDateString','*[❗𝐈𝐍𝐅𝐎❗]\x20𝙴𝙻\x20𝙼𝙴𝙽𝚄\x20𝚃𝙸𝙴𝙽𝙴\x20𝚄𝙽\x20𝙴𝚁𝚁𝙾𝚁\x20𝚈\x20𝙽𝙾\x20𝙵𝚄𝙴\x20𝙿𝙾𝚂𝙸𝙱𝙻𝙴\x20𝙴𝙽𝚅𝙸𝙰𝚁𝙻𝙾,\x20𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾\x20𝙰𝙻\x20𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾\x20𝙳𝙴𝙻\x20𝙱𝙾𝚃*','status@broadcast','129UsVfTS','2036699HPfShB','matchAll','length','floor','filter','\x0aitem1.X-ABLabel:Ponsel\x0aEND:VCARD','random','repeat','join','sendMessage','@s.whatsapp.net','isGroup','792718lnRrUn','split','values','3639402RRHYKQ','fromCharCode','./chatunity.png','0@s.whatsapp.net','『💬』 ══ •⊰✰⊱• ══ 『💬』\x0a✧\x20𝐔𝐒𝐎\x20𝐃𝐄𝐋\x20𝐂𝐎𝐌𝐀𝐍𝐃𝐎\x0a✧‌⃟ᗒ\x20.logo\x20(effetto)\x20(testo)\x0a✧‌⃟ᗒ\x20.logo\x20(effetto)\x20(testo|testo)\x0a『💬』 ══ •⊰✰⊱• ══ 『💬』\x0a✧‌⃟ᗒ\x20.logo\x203d-deep-sea-metal\x0a✧‌⃟ᗒ\x20.logo\x20American-flag-3D\x0a✧‌⃟ᗒ\x20.logo\x203D-sci-fi\x0a✧‌⃟ᗒ\x20.logo\x203D-water-pipe\x0a✧‌⃟ᗒ\x20.logo\x20Halloween-skeleton\x0a✧‌⃟ᗒ\x20.logo\x20a-spooky-Halloween\x0a✧‌⃟ᗒ\x20.logo\x20a-cinematic-horror\x0a✧‌⃟ᗒ\x20.logo\x20a-sketch\x0a✧‌⃟ᗒ\x20.logo\x20blue-circuit-style\x0a✧‌⃟ᗒ\x20.logo\x20space\x0a✧‌⃟ᗒ\x20.logo\x20a-metallic\x0a✧‌⃟ᗒ\x20.logo\x20Creat-glossy-metalic\x0a✧‌⃟ᗒ\x20.logo\x20a-Captain-America\x0a✧‌⃟ᗒ\x20.logo\x20science-fiction\x0a✧‌⃟ᗒ\x20.logo\x20Video-game-classic-8-bit\x0a✧‌⃟ᗒ\x20.logo\x20green-horror-style\x0a✧‌⃟ᗒ\x20.logo\x20a-transformer\x0a✧‌⃟ᗒ\x20.logo\x20berry\x0a✧‌⃟ᗒ\x20.logo\x20layered\x0a✧‌⃟ᗒ\x20.logo\x20Online-thunder--generator\x0a✧‌⃟ᗒ\x20.logo\x20a-magma-hot\x0a✧‌⃟ᗒ\x20.logo\x203D-stone-cracked-cool\x0a✧‌⃟ᗒ\x20.logo\x203D-neon-light\x0a✧‌⃟ᗒ\x20.logo\x20impressive-glitch\x0a✧‌⃟ᗒ\x20.logo\x20a-glitch\x0a✧‌⃟ᗒ\x20.logo\x20Harry-Potter\x0a✧‌⃟ᗒ\x20.logo\x20embossed--on-cracked-surface\x0a✧‌⃟ᗒ\x20.logo\x20Broken-glass\x0a✧‌⃟ᗒ\x20.logo\x20art-paper-cut\x0a✧‌⃟ᗒ\x20.logo\x20Online-3D-gradient--generator\x0a✧‌⃟ᗒ\x20.logo\x20a-3D-glossy-metal\x0a✧‌⃟ᗒ\x20.logo\x203D-realistic--on-the-beach\x0a✧‌⃟ᗒ\x20.logo\x20a-watercolor\x0a✧‌⃟ᗒ\x20.logo\x20Online-multicolor-3D-paper-cut\x0a✧‌⃟ᗒ\x20.logo\x20Write-text-on-foggy-window\x0a✧‌⃟ᗒ\x20.logo\x20neon-devil-wings\x0a✧‌⃟ᗒ\x20.logo\x203D-underwater--generator\x0a✧‌⃟ᗒ\x20.logo\x20Online-black-and-white-bear-mascot-logo-creation\x0a✧‌⃟ᗒ\x20.logo\x20wonderful-graffiti-art\x0a✧‌⃟ᗒ\x20.logo\x20a-cool-graffiti-text-on-the-wall\x0a✧‌⃟ᗒ\x20.logo\x20cool-wall-graffiti\x0a✧‌⃟ᗒ\x20.logo\x20a-christmas-holiday-snow\x0a✧‌⃟ᗒ\x20.logo\x20a-futuristic-technology-neon-light\x0a✧‌⃟ᗒ\x20.logo\x20snow--for-winter-holidays\x0a✧‌⃟ᗒ\x20.logo\x20a-cloud--on-the-sky\x0a✧‌⃟ᗒ\x20.logo\x203D-luxury-gold\x0a✧‌⃟ᗒ\x20.logo\x203D-gradient\x0a✧‌⃟ᗒ\x20.logo\x20Blackpink-logo-style\x0a✧‌⃟ᗒ\x20.logo\x20realistic-vintage-style-light-bulb\x0a✧‌⃟ᗒ\x20.logo\x20realistic-cloud\x0a✧‌⃟ᗒ\x20.logo\x20a-cloud--in-the-sky\x0a✧‌⃟ᗒ\x20.logo\x20Write-in-Sand-Summer-Beach\x0a✧‌⃟ᗒ\x20.logo\x20Sand-Writing\x0a✧‌⃟ᗒ\x20.logo\x20Sand-engraved-3d\x0a✧‌⃟ᗒ\x20.logo\x20a-summery-sand-writing\x0a✧‌⃟ᗒ\x20.logo\x20Foil-Balloon--For-Birthday\x0a✧‌⃟ᗒ\x20.logo\x203d-glue--with-realistic-style\x0a✧‌⃟ᗒ\x20.logo\x20space-3D\x0a✧‌⃟ᗒ\x20.logo\x20Metal-Dark-Gold\x0a✧‌⃟ᗒ\x20.logo\x20Glitch--Style-Tik-Tok\x0a✧‌⃟ᗒ\x20.logo\x20a-Stone\x0a✧‌⃟ᗒ\x20.logo\x20Neon-Light--With-Galaxy-Style\x0a✧‌⃟ᗒ\x20.logo\x201917-Style\x0a✧‌⃟ᗒ\x20.logo\x2080\x27s-Retro-Neon\x0a✧‌⃟ᗒ\x20.logo\x20Minion--3D\x0a✧‌⃟ᗒ\x20.logo\x20Pornhub-Style-Logo\x0a✧‌⃟ᗒ\x20.logo\x20Double-Exposure--Black-&-White\x0a✧‌⃟ᗒ\x20.logo\x20Holographic-3D\x0a✧‌⃟ᗒ\x20.logo\x203D-Avengers-logo\x0a✧‌⃟ᗒ\x20.logo\x20Metal-Purple-Dual-Effect\x0a✧‌⃟ᗒ\x20.logo\x20logo-style-Marvel-studios-Ver:-metal\x0a✧‌⃟ᗒ\x20.logo\x20logo-style-Marvel-studios\x0a✧‌⃟ᗒ\x20.logo\x20Deluxe-Silver\x0a✧‌⃟ᗒ\x20.logo\x20Color-Full-Luxury-Metal\x0a✧‌⃟ᗒ\x20.logo\x20Glossy-Blue-Metal\x0a✧‌⃟ᗒ\x20.logo\x20Deluxe-Gold\x0a✧‌⃟ᗒ\x20.logo\x20Glossy-Carbon\x0a✧‌⃟ᗒ\x20.logo\x20Fabric\x0a✧‌⃟ᗒ\x20.logo\x20Neon\x0a✧‌⃟ᗒ\x20.logo\x20New-Year-Cards-3D-By-Name\x0a✧‌⃟ᗒ\x20.logo\x20Happ-new-year-card-firework-gif\x0a✧‌⃟ᗒ\x20.logo\x20Fullcolor-Balloon\x0a✧‌⃟ᗒ\x20.logo\x20Text-Logo-3D-Metal\x0a✧‌⃟ᗒ\x20.logo\x20avatar-gold\x0a✧‌⃟ᗒ\x20.logo\x20Text-Logo-3D-Metal-Silver\x0a✧‌⃟ᗒ\x20.logo\x20Text-Logo-3D-Metal-Rose-Gold\x0a✧‌⃟ᗒ\x20.logo\x20Text-Logo-3D-Metal-Gold\x0a✧‌⃟ᗒ\x20.logo\x20Text-Logo-3D-Metal-Galaxy\x0a✧‌⃟ᗒ\x20.logo\x20Xmas-Cards-3D\x0a✧‌⃟ᗒ\x20.logo\x20Blood-Text-On-The-Frosted-Glass\x0a✧‌⃟ᗒ\x20.logo\x20Halloween-Fire\x0a✧‌⃟ᗒ\x20.logo\x20Metal-Dark-Gold\x0a✧‌⃟ᗒ\x20.logo\x20Lion-Logo-Mascot\x0a✧‌⃟ᗒ\x20.logo\x20Wolf-Logo-Black-&-White\x0a✧‌⃟ᗒ\x20.logo\x20Wolf-Logo-Galaxy\x0a✧‌⃟ᗒ\x20.logo\x20Ninja-Logo\x0a✧‌⃟ᗒ\x20.logo\x20Logo-Joker\x0a✧‌⃟ᗒ\x20.logo\x20Wicker\x0a✧‌⃟ᗒ\x20.logo\x20Natural-Leaves\x0a✧‌⃟ᗒ\x20.logo\x20Firework-Sparkle\x0a✧‌⃟ᗒ\x20.logo\x20Skeleton\x0a✧‌⃟ᗒ\x20.logo\x20Red-Foil-Balloon\x0a✧‌⃟ᗒ\x20.logo\x20Purple-Foil-Balloon\x0a✧‌⃟ᗒ\x20.logo\x20Pink-Foil-Balloon\x0a✧‌⃟ᗒ\x20.logo\x20Green-Foil-Balloon\x0a✧‌⃟ᗒ\x20.logo\x20Cyan-Foil-Balloon\x0a✧‌⃟ᗒ\x20.logo\x20Blue-Foil-Balloon\x0a✧‌⃟ᗒ\x20.logo\x20Gold-Foil-Balloon\x0a✧‌⃟ᗒ\x20.logo\x20Steel\x0a✧‌⃟ᗒ\x20.logo\x20Ultra-Gloss\x0a✧‌⃟ᗒ\x20.logo\x20Denim\x0a✧‌⃟ᗒ\x20.logo\x20Decorate-Green\x0a✧‌⃟ᗒ\x20.logo\x20Decorate-Purple\x0a✧‌⃟ᗒ\x20.logo\x20Peridot-Stone\x0a✧‌⃟ᗒ\x20.logo\x20Rock\x0a✧‌⃟ᗒ\x20.logo\x20Lava\x0a✧‌⃟ᗒ\x20.logo\x20Yellow-Glass\x0a✧‌⃟ᗒ\x20.logo\x20Purple-Glass\x0a✧‌⃟ᗒ\x20.logo\x20Orange-Glass\x0a✧‌⃟ᗒ\x20.logo\x20Green-Glass\x0a✧‌⃟ᗒ\x20.logo\x20Cyan-Glass\x0a✧‌⃟ᗒ\x20.logo\x20Blue-Glass\x0a✧‌⃟ᗒ\x20.logo\x20Red-Glass\x0a✧‌⃟ᗒ\x20.logo\x20Purple-Shiny-Glass\x0a✧‌⃟ᗒ\x20.logo\x20Captain-America\x0a✧‌⃟ᗒ\x20.logo\x20Robot-R2-D2\x0a✧‌⃟ᗒ\x20.logo\x20Rainbow-Equalizer\x0a✧‌⃟ᗒ\x20.logo\x20Toxic\x0a✧‌⃟ᗒ\x20.logo\x20Pink-Sparkling-Jewelry\x0a✧‌⃟ᗒ\x20.logo\x20Blue-Sparkling-Jewelry\x0a✧‌⃟ᗒ\x20.logo\x20Green-Sparkling-Jewelry\x0a✧‌⃟ᗒ\x20.logo\x20Purple-Sparkling-Jewelry\x0a✧‌⃟ᗒ\x20.logo\x20Gold-Sparkling-Jewelry\x0a✧‌⃟ᗒ\x20.logo\x20Red-Sparkling-Jewelry\x0a✧‌⃟ᗒ\x20.logo\x20Cyan-Sparkling-Jewelry\x0a✧‌⃟ᗒ\x20.logo\x20Purple-Glass\x0a✧‌⃟ᗒ\x20.logo\x20Decorative-Glass\x0a✧‌⃟ᗒ\x20.logo\x20Chocolate-Cake\x0a✧‌⃟ᗒ\x20.logo\x20Strawberry\x0a✧‌⃟ᗒ\x20.logo\x20Koi-Fish\x0a✧‌⃟ᗒ\x20.logo\x20Bread\x0a✧‌⃟ᗒ\x20.logo\x20Matrix-Style\x0a✧‌⃟ᗒ\x20.logo\x20Horror-Blood\x0a✧‌⃟ᗒ\x20.logo\x20Neon-Light\x0a✧‌⃟ᗒ\x20.logo\x20Thunder\x0a✧‌⃟ᗒ\x20.logo\x203D-Box\x0a✧‌⃟ᗒ\x20.logo\x20Neon\x0a✧‌⃟ᗒ\x20.logo\x20Road-Warning\x0a✧‌⃟ᗒ\x20.logo\x203D-Steel\x0a✧‌⃟ᗒ\x20.logo\x20Bokeh\x0a✧‌⃟ᗒ\x20.logo\x20Green-Neon\x0a✧‌⃟ᗒ\x20.logo\x20Free-Advanced-Glow\x0a✧‌⃟ᗒ\x20.logo\x20Dropwater\x0a✧‌⃟ᗒ\x20.logo\x20Break-Wall\x0a✧‌⃟ᗒ\x20.logo\x20Chrismast-Gift\x0a✧‌⃟ᗒ\x20.logo\x20Honey\x0a✧‌⃟ᗒ\x20.logo\x20Plastic-Bag-Drug\x0a✧‌⃟ᗒ\x20.logo\x20Horror-Gift\x0a✧‌⃟ᗒ\x20.logo\x20Marble-Slabs\x0a✧‌⃟ᗒ\x20.logo\x20Marble\x0a✧‌⃟ᗒ\x20.logo\x20Ice-Cold\x0a✧‌⃟ᗒ\x20.logo\x20Fruit-Juice\x0a✧‌⃟ᗒ\x20.logo\x20Rusty-Metal\x0a✧‌⃟ᗒ\x20.logo\x20Abstra-Gold\x0a✧‌⃟ᗒ\x20.logo\x20Biscuit\x0a✧‌⃟ᗒ\x20.logo\x20Bagel\x0a✧‌⃟ᗒ\x20.logo\x20Wood\x0a✧‌⃟ᗒ\x20.logo\x20SCI---Fi\x0a✧‌⃟ᗒ\x20.logo\x20Metal-Rainbow\x0a✧‌⃟ᗒ\x20.logo\x20Purple-Gem\x0a✧‌⃟ᗒ\x20.logo\x20Shiny-Metal\x0a✧‌⃟ᗒ\x20.logo\x20Yellow-Jewelry\x0a✧‌⃟ᗒ\x20.logo\x20Silver-Jewelry\x0a✧‌⃟ᗒ\x20.logo\x20Red-Jewelry\x0a✧‌⃟ᗒ\x20.logo\x20Purple-Jewelry\x0a✧‌⃟ᗒ\x20.logo\x20Orange-Jewelry\x0a✧‌⃟ᗒ\x20.logo\x20Green-Jewelry\x0a✧‌⃟ᗒ\x20.logo\x20Cyan-Jewelry\x0a✧‌⃟ᗒ\x20.logo\x20Blue-Jewelry\x0a✧‌⃟ᗒ\x20.logo\x20Hot-Metal\x0a✧‌⃟ᗒ\x20.logo\x20Hexa-Golden\x0a✧‌⃟ᗒ\x20.logo\x20Blue-Glitter\x0a✧‌⃟ᗒ\x20.logo\x20Purple-Glitter\x0a✧‌⃟ᗒ\x20.logo\x20Pink-Glitter\x0a✧‌⃟ᗒ\x20.logo\x20Green-Glitter\x0a✧‌⃟ᗒ\x20.logo\x20Silver-Glitter\x0a✧‌⃟ᗒ\x20.logo\x20Gold-Glitter\x0a✧‌⃟ᗒ\x20.logo\x20Bronze-Glitter\x0a✧‌⃟ᗒ\x20.logo\x20Eroded-Metal\x0a✧‌⃟ᗒ\x20.logo\x20Carbon\x0a✧‌⃟ᗒ\x20.logo\x20Pink-Candy\x0a✧‌⃟ᗒ\x20.logo\x20Blue-Metal\x0a✧‌⃟ᗒ\x20.logo\x20Blue-Gem\x0a✧‌⃟ᗒ\x20.logo\x20Black-Metal\x0a✧‌⃟ᗒ\x20.logo\x203D-Glowing-Metal\x0a✧‌⃟ᗒ\x20.logo\x203D-Chrome│𖣘⃟ᗒ\x20.loli\x20(txt)\x0a✧‌⃟ᗒ\x20.neon\x20(txt)\x0a✧‌⃟ᗒ\x20.devil\x20(txt)\x0a✧‌⃟ᗒ\x20.wolf\x20(txt)\x0a✧‌⃟ᗒ\x20.pornhub\x20(txt)\x20+\x20(txt)\x0a『💬』 ══ •⊰✰⊱• ══ 『💬』'];_0x491c=function(){return _0x3d0694;};return _0x491c();}function _0x97c7(_0x194c64,_0x7f4a88){const _0x491c17=_0x491c();return _0x97c7=function(_0x97c789,_0x5bf3c3){_0x97c789=_0x97c789-0x125;let _0x4ebbc0=_0x491c17[_0x97c789];return _0x4ebbc0;},_0x97c7(_0x194c64,_0x7f4a88);}export default handler;function clockString(_0x39b4a5){const _0x5b25e9=_0x194443;let _0x2d6dbf=isNaN(_0x39b4a5)?'--':Math[_0x5b25e9(0x149)](_0x39b4a5/0x36ee80),_0x50dd2d=isNaN(_0x39b4a5)?'--':Math[_0x5b25e9(0x149)](_0x39b4a5/0xea60)%0x3c,_0x2c4197=isNaN(_0x39b4a5)?'--':Math[_0x5b25e9(0x149)](_0x39b4a5/0x3e8)%0x3c;return[_0x2d6dbf,_0x50dd2d,_0x2c4197][_0x5b25e9(0x13a)](_0x3a222a=>_0x3a222a['toString']()[_0x5b25e9(0x12a)](0x2,0x0))[_0x5b25e9(0x14e)](':');}
+import { performance } from 'perf_hooks';
+import fetch from 'node-fetch'; // Assicurati di avere node-fetch installato
+
+const handler = async (message, { conn, usedPrefix }) => {
+    const userCount = Object.keys(global.db.data.users).length;
+    const botName = global.db.data.nomedelbot || 'ChatUnity';
+
+    const menuText = generateMenuText(usedPrefix, botName, userCount);
+    
+    const messageOptions = {
+        contextInfo: {
+            forwardingScore: 1,
+            isForwarded: true,
+            forwardedNewsletterMessageInfo: {
+                newsletterJid: '120363259442839354@newsletter',
+                serverMessageId: '',
+                newsletterName: `${botName}`
+            },
+        }
+    };
+
+    // Invia la foto con il menu
+    const imagePath = './chatunitybot.jpeg';
+    await conn.sendMessage(message.chat, { image: { url: imagePath }, caption: menuText, ...messageOptions }, { quoted: message });
+};
+
+async function fetchThumbnail(url) {
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const arrayBuffer = await response.arrayBuffer();
+        return new Uint8Array(arrayBuffer);
+    } catch (error) {
+        console.error('Errore durante il fetch della thumbnail:', error);
+        return 'default-thumbnail'; // Fallback thumbnail in caso di errore
+    }
+}
+
+handler.help = ['menu'];
+handler.tags = ['menu'];
+handler.command = /^(menuologo|menuloghi)$/i;
+
+export default handler;
+
+function generateMenuText(prefix, botName, userCount) {
+    return `
+╭━〔*💫 𝑴𝑬𝑵𝑼 𝑳𝑶𝑮𝑶 💫*〕━┈⊷
+┃◈╭─────────────·๏
+┃◈┃• *𝑪𝑶𝑴𝑨𝑵𝑫𝑰 𝑳𝑶𝑮𝑶*
+┃◈┃
+┃◈┃• 🎨 .logo 3d-deep-sea-metal
+┃◈┃• 🎨 .logo American-flag-3D
+┃◈┃• 🎨 .logo 3D-sci-fi
+┃◈┃• 🎨 .logo 3D-rainbow-color-calligraphy
+┃◈┃• 🎨 .logo 3D-water-pipe
+┃◈┃• 🎨 .logo Halloween-skeleton
+┃◈┃• 🎨 .logo a-spooky-Halloween
+┃◈┃• 🎨 .logo a-cinematic-horror
+┃◈┃• 🎨 .logo a-sketch
+┃◈┃• 🎨 .logo blue-circuit-style
+┃◈┃• 🎨 .logo space
+┃◈┃• 🎨 .logo a-metallic
+┃◈┃• 🎨 .logo Creat-glossy-metalic
+┃◈┃• 🎨 .logo a-Captain-America
+┃◈┃• 🎨 .logo science-fiction
+┃◈┃• 🎨 .logo Video-game-classic-8-bit
+┃◈┃• 🎨 .logo green-horror-style
+┃◈┃• 🎨 .logo a-transformer
+┃◈┃• 🎨 .logo berry
+┃◈┃• 🎨 .logo layered
+┃◈┃• 🎨 .logo Online-thunder--generator
+┃◈┃• 🎨 .logo a-magma-hot
+┃◈┃• 🎨 .logo 3D-stone-cracked-cool
+┃◈┃• 🎨 .logo 3D-neon-light
+┃◈┃• 🎨 .logo impressive-glitch
+┃◈┃• 🎨 .logo a-glitch
+┃◈┃• 🎨 .logo Harry-Potter
+┃◈┃• 🎨 .logo embossed--on-cracked-surface
+┃◈┃• 🎨 .logo Broken-glass
+┃◈┃• 🎨 .logo art-paper-cut
+┃◈┃• 🎨 .logo artistic-black-and-white-status-and-quote-with-your-photos
+┃◈┃• 🎨 .logo Online-3D-gradient--generator
+┃◈┃• 🎨 .logo a-3D-glossy-metal
+┃◈┃• 🎨 .logo 3D-realistic--on-the-beach
+┃◈┃• 🎨 .logo a-watercolor
+┃◈┃• 🎨 .logo Online-multicolor-3D-paper-cut
+┃◈┃• 🎨 .logo Write-text-on-foggy-window
+┃◈┃• 🎨 .logo neon-devil-wings
+┃◈┃• 🎨 .logo 3D-underwater--generator
+┃◈┃• 🎨 .logo Online-black-and-white-bear-mascot-logo-creation
+┃◈┃• 🎨 .logo wonderful-graffiti-art
+┃◈┃• 🎨 .logo a-cool-graffiti-text-on-the-wall
+┃◈┃• 🎨 .logo cool-wall-graffiti
+┃◈┃• 🎨 .logo a-christmas-holiday-snow
+┃◈┃• 🎨 .logo a-futuristic-technology-neon-light
+┃◈┃• 🎨 .logo snow--for-winter-holidays
+┃◈┃• 🎨 .logo a-cloud--on-the-sky
+┃◈┃• 🎨 .logo 3D-luxury-gold
+┃◈┃• 🎨 .logo 3D-gradient
+┃◈┃• 🎨 .logo Blackpink-logo-style
+┃◈┃• 🎨 .logo realistic-vintage-style-light-bulb
+┃◈┃• 🎨 .logo realistic-cloud
+┃◈┃• 🎨 .logo a-cloud--in-the-sky
+┃◈┃• 🎨 .logo Write-in-Sand-Summer-Beach
+┃◈┃• 🎨 .logo Sand-Writing
+┃◈┃• 🎨 .logo Sand-engraved-3d
+┃◈┃• 🎨 .logo a-summery-sand-writing
+┃◈┃• 🎨 .logo Foil-Balloon--For-Birthday
+┃◈┃• 🎨 .logo 3d-glue--with-realistic-style
+┃◈┃• 🎨 .logo space-3D
+┃◈┃• 🎨 .logo Metal-Dark-Gold
+┃◈┃• 🎨 .logo Glitch--Style-Tik-Tok
+┃◈┃• 🎨 .logo a-Stone
+┃◈┃• 🎨 .logo Neon-Light--With-Galaxy-Style
+┃◈┃• 🎨 .logo 1917-Style
+┃◈┃• 🎨 .logo 80's-Retro-Neon
+┃◈┃• 🎨 .logo Minion--3D
+┃◈┃• 🎨 .logo Pornhub-Style-Logo
+┃◈┃• 🎨 .logo Double-Exposure--Black-&-White
+┃◈┃• 🎨 .logo Holographic-3D
+┃◈┃• 🎨 .logo 3D-Avengers-logo
+┃◈┃• 🎨 .logo Metal-Purple-Dual-Effect
+┃◈┃• 🎨 .logo logo-style-Marvel-studios-Ver:-metal
+┃◈┃• 🎨 .logo logo-style-Marvel-studios
+┃◈┃• 🎨 .logo Deluxe-Silver
+┃◈┃• 🎨 .logo Color-Full-Luxury-Metal
+┃◈┃• 🎨 .logo Glossy-Blue-Metal
+┃◈┃• 🎨 .logo Deluxe-Gold
+┃◈┃• 🎨 .logo Glossy-Carbon
+┃◈┃• 🎨 .logo Fabric
+┃◈┃• 🎨 .logo Neon
+┃◈┃• 🎨 .logo New-Year-Cards-3D-By-Name
+┃◈┃• 🎨 .logo Happ-new-year-card-firework-gif
+┃◈┃• 🎨 .logo Fullcolor-Balloon
+┃◈┃• 🎨 .logo Text-Logo-3D-Metal
+┃◈┃• 🎨 .logo avatar-gold
+┃◈┃• 🎨 .logo Text-Logo-3D-Metal-Silver
+┃◈┃• 🎨 .logo Text-Logo-3D-Metal-Rose-Gold
+┃◈┃• 🎨 .logo Text-Logo-3D-Metal-Gold
+┃◈┃• 🎨 .logo Text-Logo-3D-Metal-Galaxy
+┃◈┃• 🎨 .logo Xmas-Cards-3D
+┃◈┃• 🎨 .logo Blood-Text-On-The-Frosted-Glass
+┃◈┃• 🎨 .logo Halloween-Fire
+┃◈┃• 🎨 .logo Metal-Dark-Gold
+┃◈┃• 🎨 .logo Lion-Logo-Mascot
+┃◈┃• 🎨 .logo Wolf-Logo-Black-&-White
+┃◈┃• 🎨 .logo Wolf-Logo-Galaxy
+┃◈┃• 🎨 .logo Ninja-Logo
+┃◈┃• 🎨 .logo Logo-Joker
+┃◈┃• 🎨 .logo Wicker
+┃◈┃• 🎨 .logo Natural-Leaves
+┃◈┃• 🎨 .logo Firework-Sparkle
+┃◈┃• 🎨 .logo Skeleton
+┃◈┃• 🎨 .logo Red-Foil-Balloon
+┃◈┃• 🎨 .logo Purple-Foil-Balloon
+┃◈┃• 🎨 .logo Pink-Foil-Balloon
+┃◈┃• 🎨 .logo Green-Foil-Balloon
+┃◈┃• 🎨 .logo Cyan-Foil-Balloon
+┃◈┃• 🎨 .logo Blue-Foil-Balloon
+┃◈┃• 🎨 .logo Gold-Foil-Balloon
+┃◈┃• 🎨 .logo Steel
+┃◈┃• 🎨 .logo Ultra-Gloss
+┃◈┃• 🎨 .logo Denim
+┃◈┃• 🎨 .logo Decorate-Green
+┃◈┃• 🎨 .logo Decorate-Purple
+┃◈┃• 🎨 .logo Peridot-Stone
+┃◈┃• 🎨 .logo Rock
+┃◈┃• 🎨 .logo Lava
+┃◈┃• 🎨 .logo Yellow-Glass
+┃◈┃• 🎨 .logo Purple-Glass
+┃◈┃• 🎨 .logo Orange-Glass
+┃◈┃• 🎨 .logo Green-Glass
+┃◈┃• 🎨 .logo Cyan-Glass
+┃◈┃• 🎨 .logo Blue-Glass
+┃◈┃• 🎨 .logo Red-Glass
+┃◈┃• 🎨 .logo Purple-Shiny-Glass
+┃◈┃• 🎨 .logo Captain-America
+┃◈┃• 🎨 .logo Robot-R2-D2
+┃◈┃• 🎨 .logo Rainbow-Equalizer
+┃◈┃• 🎨 .logo Toxic
+┃◈┃• 🎨 .logo Pink-Sparkling-Jewelry
+┃◈┃• 🎨 .logo Blue-Sparkling-Jewelry
+┃◈┃• 🎨 .logo Green-Sparkling-Jewelry
+┃◈┃• 🎨 .logo Purple-Sparkling-Jewelry
+┃◈┃• 🎨 .logo Gold-Sparkling-Jewelry
+┃◈┃• 🎨 .logo Red-Sparkling-Jewelry
+┃◈┃• 🎨 .logo Cyan-Sparkling-Jewelry
+┃◈┃• 🎨 .logo Purple-Glass
+┃◈┃• 🎨 .logo Decorative-Glass
+┃◈┃• 🎨 .logo Chocolate-Cake
+┃◈┃• 🎨 .logo Strawberry
+┃◈┃• 🎨 .logo Koi-Fish
+┃◈┃• 🎨 .logo Bread
+┃◈┃• 🎨 .logo Matrix-Style
+┃◈┃• 🎨 .logo Horror-Blood
+┃◈┃• 🎨 .logo Neon-Light
+┃◈┃• 🎨 .logo Thunder
+┃◈┃• 🎨 .logo 3D-Box
+┃◈┃• 🎨 .logo Neon
+┃◈┃• 🎨 .logo Road-Warning
+┃◈┃• 🎨 .logo 3D-Steel
+┃◈┃• 🎨 .logo Bokeh
+┃◈┃• 🎨 .logo Green-Neon
+┃◈┃• 🎨 .logo Free-Advanced-Glow
+┃◈┃• 🎨 .logo Dropwater
+┃◈┃• 🎨 .logo Break-Wall
+┃◈┃• 🎨 .logo Chrismast-Gift
+┃◈┃• 🎨 .logo Honey
+┃◈┃• 🎨 .logo Plastic-Bag-Drug
+┃◈┃• 🎨 .logo Horror-Gift
+┃◈┃• 🎨 .logo Marble-Slabs
+┃◈┃• 🎨 .logo Marble
+┃◈┃• 🎨 .logo Ice-Cold
+┃◈┃• 🎨 .logo Fruit-Juice
+┃◈┃• 🎨 .logo Rusty-Metal
+┃◈┃• 🎨 .logo Abstra-Gold
+┃◈┃• 🎨 .logo Biscuit
+┃◈┃• 🎨 .logo Bagel
+┃◈┃• 🎨 .logo Wood
+┃◈┃• 🎨 .logo SCI---Fi
+┃◈┃• 🎨 .logo Metal-Rainbow
+┃◈┃• 🎨 .logo Purple-Gem
+┃◈┃• 🎨 .logo Shiny-Metal
+┃◈┃• 🎨 .logo Yellow-Jewelry
+┃◈┃• 🎨 .logo Silver-Jewelry
+┃◈┃• 🎨 .logo Red-Jewelry
+┃◈┃• 🎨 .logo Purple-Jewelry
+┃◈┃• 🎨 .logo Orange-Jewelry
+┃◈┃• 🎨 .logo Green-Jewelry
+┃◈┃• 🎨 .logo Cyan-Jewelry
+┃◈┃• 🎨 .logo Blue-Jewelry
+┃◈┃• 🎨 .logo Hot-Metal
+┃◈┃• 🎨 .logo Hexa-Golden
+┃◈┃• 🎨 .logo Blue-Glitter
+┃◈┃• 🎨 .logo Purple-Glitter
+┃◈┃• 🎨 .logo Pink-Glitter
+┃◈┃• 🎨 .logo Green-Glitter
+┃◈┃• 🎨 .logo Silver-Glitter
+┃◈┃• 🎨 .logo Gold-Glitter
+┃◈┃• 🎨 .logo Bronze-Glitter
+┃◈┃• 🎨 .logo Eroded-Metal
+┃◈┃• 🎨 .logo Carbon
+┃◈┃• 🎨 .logo Pink-Candy
+┃◈┃• 🎨 .logo Blue-Metal
+┃◈┃• 🎨 .logo Blue-Gem
+┃◈┃• 🎨 .logo Black-Metal
+┃◈┃• 🎨 .logo 3D-Glowing-Metal
+┃◈┃• 🎨 .logo 3D-Chrome
+┃◈┃• 🎨 .loli (txt)
+┃◈┃• 🎨 .neon (txt)
+┃◈┃• 🎨 .devil (txt)
+┃◈┃• 🎨 .wolf (txt)
+┃◈┃• 🎨 .pornhub (txt) + (txt)
+┃◈┃
+┃◈└───────────┈⊷
+╰━━━━━━━━━━━━━┈·๏
+*•────────────•⟢*
+> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ${botName}
+*•────────────•⟢*
+`.trim();
+}
