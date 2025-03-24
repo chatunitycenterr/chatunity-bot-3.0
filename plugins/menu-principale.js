@@ -20,7 +20,7 @@ const handler = async (message, { conn, usedPrefix }) => {
     };
 
     // Invia la foto con il menu
-    const imagePath = './menu.principale.jpeg';
+    const imagePath = './menu/menu.principale.jpeg';
     await conn.sendMessage(message.chat, { image: { url: imagePath }, caption: menuText, ...messageOptions }, { quoted: message });
 };
 

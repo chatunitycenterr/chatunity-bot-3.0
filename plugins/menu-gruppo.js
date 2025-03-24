@@ -13,7 +13,7 @@ const handler = async (message, { conn, usedPrefix }) => {
     const menuText = generateMenuText(usedPrefix, botName, userCount);
 
     // Percorso dell'immagine
-    const imagePath = path.join(__dirname, '../menu.gruppo.jpeg');
+    const imagePath = path.join(__dirname, '../menu/menu.gruppo.jpeg');
 
     const messageOptions = {
         contextInfo: {
