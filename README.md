@@ -38,7 +38,7 @@
    termux-setup-storage
    ```
    ```bash
-   apt update -y && yes | apt upgrade && pkg install -y bash wget mpv && wget -O - https://raw.githubusercontent.com/chatunitycenterr/chatunity-bot/main/chatunity.sh | bash
+   apt update -y && yes | apt upgrade && pkg install -y bash wget mpv && wget -O - https://raw.githubusercontent.com/chatunitycenterr/chatunity-bot-3.0/main/chatunity.sh | bash
    ```
 ---
 
@@ -59,8 +59,8 @@
 
 2. **Clona il repository**:
    ```bash
-   git clone https://github.com/chatunitycenterr/chatunity-bot.git
-   cd chatunity-bot
+   git clone https://github.com/chatunitycenterr/chatunity-bot-3.0.git
+   cd chatunity-bot-3.0
    ```
 
 3. **Installa le dipendenze**:
