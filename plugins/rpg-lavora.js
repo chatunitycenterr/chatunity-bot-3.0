@@ -19,11 +19,6 @@ let handler = async (m, { conn, isPrems }) => {
   await conn.reply(m.chat, `💼 ${pickRandom(jobs)} *${formatNumber(reward)}* ( *${reward}* ) XP 💫`, m)
 }
 
-handler.help = ['lavora']
-handler.tags = ['rpg']
-handler.command = ['lavora', 'work', 'w'] 
-handler.register = true 
-
 // Funzioni di utilità
 function formatNumber(num) {
   if (num >= 1000 && num < 1000000) {
@@ -79,3 +74,10 @@ const jobs = [
   "Vendi panini al pesce e ottieni",
   "Ripari slot machine e ricevi"
 ]
+
+handler.help = ['lavora']
+handler.tags = ['rpg']
+handler.command = ['lavora', 'work', 'w']
+
+// Esporta il modulo utilizzando la sintassi ES Module
+export default handler

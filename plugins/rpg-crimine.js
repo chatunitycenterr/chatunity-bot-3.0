@@ -14,13 +14,13 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
   
   cooldowns[m.sender] = Date.now()
   
-  // Seleziona un utente casuale (escluso se stessi)
-  let randomUserId = Object.keys(users).filter(id => id !== senderId)[Math.floor(Math.random() * (Object.keys(users).length - 1))]
-  let randomUserName = conn.getName(randomUserId)
+  // Seleziona un utente specifico se taggato, altrimenti casuale
+  let targetId = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : Object.keys(users).filter(id => id !== senderId)[Math.floor(Math.random() * (Object.keys(users).length - 1))]
+  let targetName = conn.getName(targetId)
 
   // Quantità rubabile (15-50 stelle)
-  let minRubare = 15
-  let maxRubare = 50
+  let minRubare = 50
+  let maxRubare = 100
   let quantita = Math.floor(Math.random() * (maxRubare - minRubare + 1)) + minRubare
 
   // Possibili esiti (0=successo, 1=catturato, 2=successo parziale)
@@ -29,10 +29,10 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
   switch (esito) {
     case 0: // Successo completo
       users[senderId].limit += quantita
-      users[randomUserId].limit -= quantita
+      users[targetId].limit -= quantita
       await conn.sendMessage(m.chat, {
-        text: `🚩 Crimine riuscito! Hai rubato *${quantita} ⭐ Stelle* a @${randomUserId.split("@")[0]}\n\n*+${quantita} ⭐* aggiunte al tuo saldo.`,
-        mentions: [randomUserId]
+        text: `🚩 Crimine riuscito! Hai rubato *${quantita} ⭐ Stelle* a @${targetId.split("@")[0]}\n\n*+${quantita} ⭐* aggiunte al tuo saldo.`,
+        mentions: [targetId]
       }, { quoted: m })
       break
 
@@ -43,12 +43,12 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
       break
 
     case 2: // Successo parziale
-      let parziale = Math.min(Math.floor(Math.random() * (users[randomUserId].limit / 2 - minRubare + 1)) + minRubare, maxRubare)
+      let parziale = Math.min(Math.floor(Math.random() * (users[targetId].limit / 2 - minRubare + 1)) + minRubare, maxRubare)
       users[senderId].limit += parziale
-      users[randomUserId].limit -= parziale
+      users[targetId].limit -= parziale
       await conn.sendMessage(m.chat, {
-        text: `🚩 Crimine riuscito a metà! Hai rubato solo *${parziale} ⭐ Stelle* da @${randomUserId.split("@")[0]}\n\n*+${parziale} ⭐* aggiunte al tuo saldo.`,
-        mentions: [randomUserId]
+        text: `🚩 Crimine riuscito a metà! Hai rubato solo *${parziale} ⭐ Stelle* da @${targetId.split("@")[0]}\n\n*+${parziale} ⭐* aggiunte al tuo saldo.`,
+        mentions: [targetId]
       }, { quoted: m })
       break
   }
