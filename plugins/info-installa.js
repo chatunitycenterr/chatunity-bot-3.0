@@ -33,7 +33,9 @@ let info = `
 
 𝐒𝐂𝐀𝐑𝐈𝐂𝐀 𝐂𝐇𝐀𝐓𝐔𝐍𝐈𝐓𝐘-𝐁𝐎𝐓
 
-Segui questi passaggi per installare ChatUnity Bot correttamente su Termux.
+Segui questi passaggi per installare ChatUnity Bot correttamente su Termux
+
+repository termux https://github.com/chatunitycenterr/chatunity-bot
 
 video yt tutorial https://youtube.com/shorts/qek7wWadhtI?si=MrrA3bLWWAsLmpw6
 
@@ -67,11 +69,6 @@ Ora esegui il seguente comando per aggiornare Termux:
 
 apt update -y && yes | apt upgrade && pkg install -y bash wget mpv && wget -O - https://raw.githubusercontent.com/chatunitycenterr/chatunity-bot/main/chatunity.sh | bash
 
-✅ Aggiorna la lista dei pacchetti disponibili
-✅ Esegue l’upgrade automatico dei pacchetti installati
-✅ Installa bash, wget e mpv (necessari per il bot)
-✅ Scarica e installa ChatUnity Bot automaticamente
-
 『💬』 ══ •⊰✰⊱• ══ 『💬』
 
 4. Avviare ChatUnity Bot
@@ -85,9 +82,9 @@ Se riscontri problemi, verifica di aver seguito tutti i passaggi correttamente e
 conn.reply(m.chat, info,prova, m, {
 contextInfo: { externalAdReply :{ mediaUrl: null, mediaType: 1, description: null, 
 title: '𝙸𝙽𝙵𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃',
-body: 'ᴛʜᴇ ᴍʏsᴛɪᴄ ﹣ ʙᴏᴛ',         
+body: 'ChatUnity',         
 previewType: 0, thumbnail: fs.readFileSync("./menu/Menu2.jpg"),
-sourceUrl: `https://github.com/BrunoSobrino/TheMystic-Bot-MD`}}})
+sourceUrl: `https://github.com/chatunitycenterr/chatunity-bot`}}})
 }
 handler.help = ['infobot', 'speed']
 handler.tags = ['info', 'tools']

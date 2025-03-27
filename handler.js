@@ -76,7 +76,7 @@ export async function handler(chatUpdate) {
                 if (!('delete' in chat)) chat.delete = false
                 if (!('gpt' in chat)) chat.gpt = false
                 if (!('bestemmiometro' in chat)) chat.bestemmiometro = true
-                if (!('antielimina' in chat)) chat.antielimina = true
+                if (!('antielimina' in chat)) chat.antielimina = false
                 if (!('antiLink' in chat)) chat.antiLink = true
                 if (!('antiinsta' in chat)) chat.antiinsta = false
                 if (!('antitiktok' in chat)) chat.antitiktok = false

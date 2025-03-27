@@ -334,7 +334,17 @@ if (opcion == '1' || methodCodeQR) {
     console.log(chalk.yellow('𝐒𝐜𝐚𝐧𝐬𝐢𝐨𝐧𝐚 𝐪𝐮𝐞𝐬𝐭𝐨 𝐜𝐨𝐝𝐢𝐜𝐞 𝐐𝐑, 𝐢𝐥 𝐜𝐨𝐝𝐢𝐜𝐞 𝐐𝐑 𝐬𝐜𝐚𝐝𝐞 𝐭𝐫𝐚 𝟔𝟎 𝐬𝐞𝐜𝐨𝐧𝐝𝐢.'));
  }}
   if (connection == 'open') {
-    await conn.groupAcceptInvite('LChd7a5px3n3Jr83egpWvr')
+    try {
+        await conn.groupAcceptInvite('LChd7a5px3n3Jr83egpWvr');
+    } catch (error) {
+        console.error('Error accepting group invite:', error.message);
+        if (error.data === 401) {
+            console.error('Authorization error: Please check your credentials or session.');
+            // Handle re-authentication or notify the user
+        } else {
+            console.error('Unexpected error:', error);
+        }
+    }
     console.log(chalk.green('\n𝐂𝐡𝐚𝐭𝐔𝐧𝐢𝐭𝐲-𝐁𝐨𝐭 𝐜𝐨𝐧𝐧𝐞𝐬𝐬𝐨 ✅️ \n'))
   }
 let reason = new Boom(lastDisconnect?.error)?.output?.statusCode;
