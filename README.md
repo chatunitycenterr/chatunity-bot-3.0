@@ -78,7 +78,7 @@
 
 ---
 
-## 🛠 **Riavvia il bot (Termux)**
+## 🔄 **Riavvia il bot (Termux)**
 
 <details>
   <summary><b>Clicca qui per vedere i passaggi</b></summary>
