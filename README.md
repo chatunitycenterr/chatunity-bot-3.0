@@ -78,6 +78,30 @@
 
 ---
 
+## 🛠 **Riavvia il bot (Termux)**
+
+<details>
+  <summary><b>Clicca qui per vedere i passaggi</b></summary>
+
+1. **Fai nuova sessione e scrivi**:
+   ```bash
+  cd chatunity-bot
+   ```
+
+ 2. **Elimina le Sessioni**:
+   ```bash
+  rm -rf Sessioni
+   ```
+
+2. **Ricollega il bot**:
+   ```bash
+   npm start
+   ```
+
+</details>
+
+---
+
 ## 🌐 **Installazione su Windows/VPS/RDP**
 
 <details>
